@@ -1,0 +1,50 @@
+:root {
+    --brand-cyan: #22d3ee;
+    --brand-blue: #3b82f6;
+    --bg-dark: #030712;
+}
+
+body { 
+    font-family: 'Plus Jakarta Sans', sans-serif; 
+    background-color: var(--bg-dark); 
+}
+
+.mono { 
+    font-family: 'JetBrains Mono', monospace; 
+}
+
+.glass { 
+    background: rgba(15, 23, 42, 0.6); 
+    backdrop-filter: blur(12px); 
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.gradient-border {
+    position: relative;
+    border-radius: 1rem;
+    background: linear-gradient(var(--bg-dark), var(--bg-dark)) padding-box,
+                linear-gradient(135deg, var(--brand-cyan), var(--brand-blue)) border-box;
+    border: 1px solid transparent;
+}
+
+.hero-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    height: 80vh;
+    background: radial-gradient(circle, rgba(34, 211, 238, 0.08) 0%, rgba(59, 130, 246, 0.03) 50%, transparent 100%);
+    z-index: -1;
+}
+
+.shimmer {
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+    background-size: 200% 100%;
+    animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ro" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafePrompt | Local-First AI Privacy Shield</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-slate-200 antialiased selection:bg-cyan-500/30">
+
+    <div class="hero-glow"></div>
+
+   
+    <nav class="fixed top-0 w-full z-[100] px-6 py-4">
+        <div class="max-w-6xl mx-auto glass rounded-2xl px-6 py-3 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 bg-gradient-to-br from-cyan-400 to-blue-600 rounded-lg flex items-center justify-center shadow-lg">
+                    <i data-lucide="shield-check" class="text-slate-900 w-5 h-5"></i>
+                </div>
+                <span class="text-lg font-extrabold tracking-tight text-white italic">Safe<span class="text-cyan-400">Prompt</span></span>
+            </div>
+            <div class="hidden md:flex gap-8 text-[11px] font-bold uppercase tracking-widest text-slate-400">
+                <a href="#how" class="hover:text-cyan-400 transition">Cum funcționează</a>
+                <a href="#features" class="hover:text-cyan-400 transition">Protocoale</a>
+            </div>
+            <a href="https://github.com/222rot/SafePrompt/tree/main" class="bg-white text-black px-5 py-2 rounded-xl text-xs font-bold hover:bg-cyan-400 transition shadow-xl">
+                GitHub Repo
+            </a>
+        </div>
+    </nav>
+
+
+    <section class="pt-40 pb-20 px-6 max-w-6xl mx-auto">
+        <div class="text-center" data-aos="fade-up">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-cyan-500/30 bg-cyan-500/5 text-cyan-400 text-[10px] font-bold uppercase tracking-wider mb-6">
+                <span class="relative flex h-2 w-2">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
+                </span>
+                V1.0 MVP is Live
+            </div>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-8 leading-[1.05] tracking-tight">
+                Datele tale nu aparțin <br>
+                <span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">modelelor AI.</span>
+            </h1>
+            <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto mb-12 font-light leading-relaxed">
+                SafePrompt acționează ca un scut local între browserul tău și LLM-uri. Sanitizare avansată, Honeytokens și eliminarea logică a codului — totul pe mașina ta.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href = "https://github.com/222rot/SafePrompt/tree/main"class="bg-cyan-500 text-slate-950 px-8 py-4 rounded-2xl font-bold text-sm hover:scale-105 transition shadow-[0_0_20px_rgba(34,211,238,0.3)]">
+                    Github Repo
+                </a>
+            </div>
+        </div>
+    </section>
+
+    
+    <div class="max-w-4xl mx-auto px-6 mb-32 grid grid-cols-2 md:grid-cols-4 gap-8 text-center" data-aos="fade-up" data-aos-delay="200">
+        <div>
+            <div class="text-2xl font-bold text-white tracking-tighter">100%</div>
+            <div class="text-[10px] uppercase tracking-widest text-slate-500 font-bold">Procesare Locală</div>
+        </div>
+        <div>
+            <div class="text-2xl font-bold text-white tracking-tighter">&lt; 15ms</div>
+            <div class="text-[10px] uppercase tracking-widest text-slate-500 font-bold">Latență API</div>
+        </div>
+        <div>
+            <div class="text-2xl font-bold text-white tracking-tighter">0 Logs</div>
+            <div class="text-[10px] uppercase tracking-widest text-slate-500 font-bold">Cloud Storage</div>
+        </div>
+        <div>
+            <div class="text-2xl font-bold text-white tracking-tighter">OSS</div>
+            <div class="text-[10px] uppercase tracking-widest text-slate-500 font-bold">Auditabil 100%</div>
+        </div>
+    </div>
+
+    
+    <section id="how" class="px-6 py-24 bg-slate-900/20 border-y border-slate-800/50">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+                <div class="flex-1" data-aos="fade-right">
+                    <h2 class="text-3xl font-extrabold text-white mb-6">Securitate fără compromis de context.</h2>
+                    <ul class="space-y-6">
+                        <li class="flex gap-4">
+                            <div class="mt-1 w-5 h-5 rounded bg-cyan-500/20 flex items-center justify-center shrink-0">
+                                <i data-lucide="check" class="text-cyan-400 w-3 h-3"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-sm">Honeytoken Injection</h4>
+                                <p class="text-slate-400 text-xs mt-1">Nu doar ștergem datele. Le înlocuim cu date sintetice (fake AWS keys/IBANs) pentru a păstra sensul tehnic al promptului.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <div class="mt-1 w-5 h-5 rounded bg-purple-500/20 flex items-center justify-center shrink-0">
+                                <i data-lucide="shield-alert" class="text-purple-400 w-3 h-3"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-sm">Regula lui Charon</h4>
+                                <p class="text-slate-400 text-xs mt-1">Analiză de entropie Shannon pentru a detecta parole complexe pe care regex-urile tradiționale le ratează.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="flex-1 w-full" data-aos="fade-left">
+                    <div class="gradient-border overflow-hidden shadow-2xl">
+                        <div class="bg-slate-900 p-4 border-b border-slate-800 flex justify-between items-center">
+                            <div class="flex gap-2">
+                                <div class="w-2 h-2 rounded-full bg-red-500/50"></div>
+                                <div class="w-2 h-2 rounded-full bg-yellow-500/50"></div>
+                                <div class="w-2 h-2 rounded-full bg-green-500/50"></div>
+                            </div>
+                            <span class="text-[9px] mono text-slate-500 font-bold tracking-widest uppercase">Console :: Sanitize_Engine_V1</span>
+                        </div>
+                        <div class="p-6 bg-slate-950 mono text-xs leading-relaxed min-h-[250px]">
+                            <div class="text-slate-500 mb-2">// Text brut (cu date sensibile)</div>
+                            <div class="text-red-400/80 mb-6 italic">
+                                "Configurare AWS: AKIA7J2X93KLN82MS... și parola secretă 'Admin_2024!'"
+                            </div>
+                            <div class="text-slate-500 mb-2">// După procesarea SafePrompt</div>
+                            <div class="text-cyan-400">
+                                "Configurare AWS: <span class="bg-cyan-500/20 px-1 rounded">AKIA_HONEYTOKEN_REDACTED</span> și parola secretă <span class="bg-purple-500/20 px-1 rounded">[HIGH_ENTROPY_REDACTED]</span>"
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+    <section id="features" class="max-w-6xl mx-auto px-6 py-32 text-center">
+        <h2 class="text-xs font-black uppercase tracking-[0.3em] text-cyan-500 mb-4" data-aos="fade-up">Infrastructure</h2>
+        <h3 class="text-4xl font-bold text-white mb-16" data-aos="fade-up" data-aos-delay="100">Arhitectură Local-First</h3>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="p-10 rounded-[2.5rem] bg-slate-900/40 border border-slate-800 hover:border-cyan-500/30 transition-all group" data-aos="fade-up" data-aos-delay="200">
+                <i data-lucide="server" class="w-10 h-10 text-cyan-500 mb-8 mx-auto group-hover:scale-110 transition"></i>
+                <h4 class="text-white font-bold text-lg mb-4">FastAPI Backend</h4>
+                <p class="text-slate-400 text-sm leading-relaxed">Server Python ultra-rapid care rulează pe 127.0.0.1:8000. Datele nu părăsesc niciodată rețeaua ta locală în formă brută.</p>
+            </div>
+            
+            <div class="p-10 rounded-[2.5rem] bg-slate-900/40 border border-slate-800 hover:border-blue-500/30 transition-all group" data-aos="fade-up" data-aos-delay="300">
+                <i data-lucide="layers" class="w-10 h-10 text-blue-500 mb-8 mx-auto group-hover:scale-110 transition"></i>
+                <h4 class="text-white font-bold text-lg mb-4">Dockerized</h4>
+                <p class="text-slate-400 text-sm leading-relaxed">Instalare printr-o singură comandă. Izolat, sigur și gata de rulare pe orice sistem de operare (Linux, Mac, Windows).</p>
+            </div>
+
+            <div class="p-10 rounded-[2.5rem] bg-slate-900/40 border border-slate-800 hover:border-emerald-500/30 transition-all group" data-aos="fade-up" data-aos-delay="400">
+                <i data-lucide="puzzle" class="w-10 h-10 text-emerald-500 mb-8 mx-auto group-hover:scale-110 transition"></i>
+                <h4 class="text-white font-bold text-lg mb-4">JS Browser Extension</h4>
+                <p class="text-slate-400 text-sm leading-relaxed">Integrare nativă cu interfața ChatGPT, Gemini și Claude. Sanitizare la un click distanță direct în chatbox.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="py-12 border-t border-slate-800 text-center">
+        <div class="text-[10px] font-bold text-slate-500 uppercase tracking-[0.4em]">SafePrompt Project &copy; 2026</div>
+    </footer>
+
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
